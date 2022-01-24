@@ -32,7 +32,7 @@ const getData = () => {
         }
     }
     const runFetch = () => {
-        fetch('/cross-sell-dbase/dbase.json')
+        fetch('./cross-sell-dbase/dbase.json')
             .then((response) => {
                 if (response.ok) {
                     return response.json()
